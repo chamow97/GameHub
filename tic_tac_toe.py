@@ -1,6 +1,10 @@
+#!/usr/bin/env python
+
 import random
+import os
 
 class Tic_Tac_Toe(object):
+
 	def PrintTable(self, position, turn):
 		print("\n")
 		print("\n")
@@ -12,8 +16,13 @@ class Tic_Tac_Toe(object):
 		for i in range(0,(self.no_of_blocks)):
 			print('\t\t\t', end='')
 			for j in range(0,(self.no_of_blocks)):
-				print(" | ", end='')
-				print(self.table[(i*(self.no_of_blocks))+j], end = '')
+				if self.table[(i*self.no_of_blocks)+j] == "X" or \
+				self.table[(i*self.no_of_blocks)+j] == "O":
+					print(" |  ", end='')
+					print(self.table[(i*(self.no_of_blocks))+j], end = '')
+				else:	
+					print(" | ", end='')
+					print(self.table[(i*(self.no_of_blocks))+j], end = '')
 			print(" |\n")
 		self.game_over = self.CheckWinner()
 		
@@ -70,6 +79,7 @@ class Tic_Tac_Toe(object):
 		if self.game_over == "-1":
 			print("\n\n\t\t\tMatch ends in a Draw!!")
 
+	
 	def New_Game(self):
 		print("\033[1;31m\n\n\t\t\t TIC-TAC-TOE !!\n\t\t\t --- --- ---")
 		while(1):
@@ -108,6 +118,7 @@ class Tic_Tac_Toe(object):
 			self.player1_symbol = "O"
 		self.Play()
 
+	
 	def CheckWinner(self):
 		is_game_over = True
 		for i in range (1, self.no_of_blocks):
@@ -147,6 +158,13 @@ class Tic_Tac_Toe(object):
 
 		return "-1"
 
-
-T = Tic_Tac_Toe()
-T.New_Game()
+while(1):
+	T = Tic_Tac_Toe()
+	T.New_Game()
+	play_again = input("\n\n\t\t\t Want to play again?(y/n): ")
+	if play_again == 'y' or play_again == 'Y':
+		os.system("clear")
+		continue
+	else:
+		print("\n\n\t\t\t\t GoodBye :)")
+		break

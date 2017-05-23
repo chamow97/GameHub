@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from __future__ import print_function
 import random
@@ -84,9 +84,7 @@ class Tic_Tac_Toe(object):
 				print("\n\t\t{0} it's your turn. Enter any position (1-{1}): " .format(self.player1_name, self.no_of_rows * self.no_of_rows), end = '')
 			else:
 				print("\n\t\t{0} it's your turn. Enter any position (1-{1}): " .format(self.player2_name, self.no_of_rows * self.no_of_rows), end = '')
- 
-			position = int(input())
-			
+			position = int(input())				
 
 			#checking for correct input
 			if (position >= 1 and
@@ -120,25 +118,25 @@ class Tic_Tac_Toe(object):
 		
 		"""
 		print("\n\n\t\t\t TIC-TAC-TOE !!\n\t\t\t --- --- ---")
-		while(1):
+		while(True):
 			print("\n\t\tEnter number of rows(2 - 9): ", end='')
-			try:
-				self.no_of_rows = int(raw_input())
-			except:
-				pass
+			self.no_of_rows = int(input())
 			if self.no_of_rows > 9 or self.no_of_rows < 2:
 				print("\n\t\t Row number is restricted to range [2,9]!")
 			else:
 				break
-		self.player1_name = raw_input("\n\n\t\tEnter the name of Player1: ")
+		print("\n\n\t\tEnter the name of Player1: ", end='')
+		self.player1_name = input()
 		if self.player1_name == "":
 			self.player1_name = "Player1"
-		self.player2_name = input("\n\n\t\tEnter the name of Player2: ")
+		print("\n\n\t\tEnter the name of Player2: ", end='')
+		self.player2_name = input()
 		if self.player2_name == "":
 			self.player2_name = "Player2"
 		print("\n\n\t\t\t\t Toss-Time!")
 		while(1):
-			player_toss = input("\n\n\t\t\t {0} it's your call(H or T): " .format(self.player1_name));
+			print("\n\n\t\t\t {0} it's your call(H or T): " .format(self.player1_name), end='');
+			player_toss = input()
 			if (player_toss == "H" or
 				player_toss == "h" or
 				player_toss == "T" or
@@ -205,10 +203,11 @@ class Tic_Tac_Toe(object):
 		#if winner cannot be decided at this stage
 		return "-1"
 if __name__ == "__main__":
-	while(1):
+	while(True):
 		T = Tic_Tac_Toe()
 		T.New_Game()
-		play_again = input("\n\n\t\t\t Want to play again?(y/n): ")
+		print("\n\n\t\t\t Want to play again?(y/n): ", end='')
+		play_again = input()
 		if play_again == 'y' or play_again == 'Y':
 			os.system("clear")
 			continue

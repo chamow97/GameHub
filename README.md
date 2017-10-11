@@ -15,13 +15,13 @@
 <h4>Instruction</h4>
 <p>Ping pong is a Player vs CPU type of classic ping pong game.</p>
 <h4>How to run the game?</h4>
-<h2>Eclipse IDE</h2>
+<h5>Eclipse IDE</h5>
 <ol>
 	<li>Install Eclipse IDE and setup Java.</li>
 	<li>Copy the file contents to Eclipse Workspace Folder.</li>
 	<li>Open the project in Eclipse and run Tennis.java file in the source folder.</li>
 </ol>
-<h2>Netbeans and other IDE</h2>
+<h5>Netbeans and other IDE</h5>
 <ul>
 	<li>Import the project as Eclipse Project in the IDE.</li>
 	<li>Follow the above steps.</li>

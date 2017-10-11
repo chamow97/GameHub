@@ -10,3 +10,22 @@
 <img style="text-align: center; margin-left: auto; margin-right: auto; width: 80%;" src="tic-tac-toe/sample/tic_tac_toe.gif" alt="Sample Gameplay">
 <h4>Code Review</h4>
 <p>The code has been reviewed at stackexchange which can be found <a href="https://codereview.stackexchange.com/questions/162752/simple-tic-tac-toe-game-in-python3">here</a>.</p>
+<br>
+<h3>2. Ping-Pong - Java</h3>
+<h4>Instruction</h4>
+<p>Ping pong is a Player vs CPU type of classic ping pong game.</p>
+<h4>How to run the game?</h4>
+<h2>Eclipse IDE</h2>
+<ol>
+	<li>1. Install Eclipse IDE and setup Java.</li>
+	<li>2. Copy the file contents to Eclipse Workspace Folder.</li>
+	<li>3. Open the project in Eclipse and run Tennis.java file in the source folder.</li>
+</ol>
+<h2>Netbeans and other IDE</h2>
+<ul>
+	<li>Import the project as Eclipse Project in the IDE.</li>
+	<li>Follow the above steps.</li>
+</ul>
+<h4>Sample Gameplay</h4>
+<img style="text-align: center; margin-left: auto; margin-right: auto; width: 80%;" src="ping-pong/screenshot/ping-pong.gif" alt="Sample Gameplay">
+

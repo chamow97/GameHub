@@ -17,9 +17,9 @@
 <h4>How to run the game?</h4>
 <h2>Eclipse IDE</h2>
 <ol>
-	<li>1. Install Eclipse IDE and setup Java.</li>
-	<li>2. Copy the file contents to Eclipse Workspace Folder.</li>
-	<li>3. Open the project in Eclipse and run Tennis.java file in the source folder.</li>
+	<li>Install Eclipse IDE and setup Java.</li>
+	<li>Copy the file contents to Eclipse Workspace Folder.</li>
+	<li>Open the project in Eclipse and run Tennis.java file in the source folder.</li>
 </ol>
 <h2>Netbeans and other IDE</h2>
 <ul>
